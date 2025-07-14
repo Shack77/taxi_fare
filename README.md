@@ -9,21 +9,6 @@ This is a simple machine learning web service built using Flask that predicts th
 - Hosted on AWS EC2
 - Accepts JSON POST requests
 
-## Example Request
-
-```bash
-curl -X POST http://<your-ec2-public-ip>:5000/predict \
-  -H "Content-Type: application/json" \
-  -d '{"trip_distance": 2.3, "passenger_count": 1, "hour": 14}'
-
-Response
-json
-Copy
-Edit
-{
-  "fare": 6.37
-}
-
 Project Structure
 bash
 Copy
@@ -43,3 +28,21 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python app.py
+
+## Example Request
+
+```bash
+curl -X POST http://<your-ec2-public-ip>:5000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"trip_distance": 2.3, "passenger_count": 1, "hour": 14}'
+
+Response
+json
+Copy
+Edit
+{
+  "fare": 6.37
+}
+
+
+
