@@ -9,7 +9,7 @@ This is a simple machine learning web service built using Flask that predicts th
 - Hosted on AWS EC2
 - Accepts JSON POST requests
 
-Project Structure
+## Project Structure
 bash
 Copy
 Edit
@@ -20,7 +20,7 @@ taxi-fare-app/
 ├── taxi.csv            # Dataset (optional, if committed)
 ├── venv/               # Python virtual environment
 
-How to Run
+## How to Run
 bash
 Copy
 Edit
